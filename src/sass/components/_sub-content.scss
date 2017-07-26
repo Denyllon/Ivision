@@ -1,0 +1,32 @@
+.sub-content {
+    @include flex-col();
+    height: 100%;
+
+    &>.sub-content-item {
+        background-color: #fff;
+        padding: 36px 50px;
+        height: 50%;
+
+        .header {
+            font-size: 24px;
+            letter-spacing: -1px;
+        }
+        .subheader {
+            margin: 10px 0 30px 0;
+            font-size: 18px;
+            font-style: italic;
+            color: $gold;
+        }
+        .description {
+            width: 100%;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 23px;
+            margin: 23px 0 8px 0;
+        }
+    }
+    &>.sub-content-item:not(:first-of-type) {
+        margin-top: 1px;
+    }
+}
+    

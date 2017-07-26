@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.carousel-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 240px;
+  background-color: #b7b5b3;
+  overflow-x: hidden; }
+
+.carousel-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-shadow: 1px 1px #666;
+  padding-left: 30px;
+  width: 240px;
+  height: 100%;
+  box-sizing: border-box; }
+
+.carousel-item .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 123px;
+    width: 140px;
+    height: 42px;
+    z-index: 1; }
+
+.carousel-item .description {
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: #d3aa6f;
+    z-index: 1; }
+
+.carousel-item:hover {
+    text-shadow: none;
+    position: relative;
+    transition-duration: 0.5s;
+    cursor: default; }
+
+.carousel-item:hover .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background-color: #000;
+      opacity: 0.7;
+      transition-duration: 0.5s; }
+
+.carousel-item:hover .description {
+      color: #fff;
+      transition-duration: 0.5s; }
+
+.carousel-item.item-1 {
+  background: #b7b5b3 url(../img/carou1.png) center center no-repeat; }
+
+.carousel-item.item-2 {
+  background: #b7b5b3 url(../img/carou2.png) center center no-repeat; }
+
+.carousel-item.item-3 {
+  background: #b7b5b3 url(../img/carou3.png) center center no-repeat; }
+
+.carousel-item.item-4 {
+  background: #b7b5b3 url(../img/carou4.png) center center no-repeat; }
+
+.carousel-item.item-5 {
+  background: #b7b5b3 url(../img/carou5.png) center center no-repeat; }
+
+.main-content {
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 100%;
+  margin-right: 1px;
+  padding: 55px 50px; }
+
+.main-content .header {
+    margin: 0 40px 15px 0;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1px; }
+
+.main-content .subheader {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-style: italic;
+    color: #d3aa6f; }
+
+.main-content .description {
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 23px 0; }
+
+.sub-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%; }
+
+.sub-content > .sub-content-item {
+    background-color: #fff;
+    padding: 36px 50px;
+    height: 50%; }
+
+.sub-content > .sub-content-item .header {
+      font-size: 24px;
+      letter-spacing: -1px; }
+
+.sub-content > .sub-content-item .subheader {
+      margin: 10px 0 30px 0;
+      font-size: 18px;
+      font-style: italic;
+      color: #d3aa6f; }
+
+.sub-content > .sub-content-item .description {
+      width: 100%;
+      text-align: justify;
+      font-size: 14px;
+      line-height: 23px;
+      margin: 23px 0 8px 0; }
+
+.sub-content > .sub-content-item:not(:first-of-type) {
+    margin-top: 1px; }
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #d3aa6f;
+  color: #d3aa6f;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  letter-spacing: 6px;
+  padding: 15px 37.5px;
+  margin: 30px 0; }
+
+body {
+  min-width: 480px;
+  font-family: "Lato", sans-serif;
+  background-color: #e6e6e6; }
+
+.content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 300;
+  margin: 94px 0; }
+
+.content .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 800px;
+    height: 570px; }
+
+.content .container > * {
+      width: 50%;
+      margin-top: 1px; }
+
+@media all and (max-width: 816px) {
+  .carousel {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 15px 21px; }
+    .carousel:before {
+      content: "";
+      box-sizing: border-box;
+      height: 32px;
+      width: 21px;
+      border-style: solid;
+      border-width: 16px 21px 16px 0px;
+      border-color: transparent #d3aa6f transparent transparent; }
+    .carousel:after {
+      content: "";
+      box-sizing: border-box;
+      height: 32px;
+      width: 21px;
+      border-style: solid;
+      border-width: 16px 0px 16px 21px;
+      border-color: transparent transparent transparent #d3aa6f; }
+    .carousel > .carousel-wrapper {
+      width: 240px;
+      margin: 0; }
+  .content {
+    margin: 0 21px 32px 21px;
+    height: auto; }
+    .content > .container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 100%;
+      height: auto; }
+      .content > .container .main-content,
+      .content > .container .sub-content {
+        width: 100%; } }
+
+/*# sourceMappingURL=main.css.map*/

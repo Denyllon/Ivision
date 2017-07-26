@@ -1,0 +1,17 @@
+.content {
+    @include flex-col();
+    align-items: center;
+    font-weight: 300;
+    margin: 94px 0;
+
+    .container {
+        @include flex-row();
+        width: 800px;
+        height: 570px;
+
+        &>* {
+            width: 50%;
+            margin-top: 1px;
+        }
+    }
+}

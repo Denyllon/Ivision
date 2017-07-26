@@ -1,0 +1,35 @@
+@mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin render-carousel-items() {
+    @for $i from 1 through $carousel-items-count {
+        .carousel-item {
+            &.item-#{$i} { 
+                background: $carousel-bgc url("../img/carou#{$i}.png") center center no-repeat;
+            }
+        }
+    }
+}
+
+@mixin carousel-arrow($side) {
+    content: "";
+    box-sizing: border-box;
+    height: 32px;
+    width: 21px;
+    border-style: solid;
+    @if $side == 'left' {
+        border-width: 16px 21px 16px 0px;
+        border-color: transparent $gold transparent transparent;
+    }
+    @if $side == 'right' {
+        border-width: 16px 0px 16px 21px;
+        border-color: transparent transparent transparent $gold;
+    }     
+}

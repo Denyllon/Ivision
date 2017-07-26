@@ -1,0 +1,27 @@
+.main-content {
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 100%;
+    margin-right: 1px;
+    padding: 55px 50px;;
+
+    .header {
+        margin: 0 40px 15px 0;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -1px;
+    }
+    .subheader {
+        margin-bottom: 40px;
+        font-size: 36px;
+        font-style: italic;
+        color: $gold;
+    }
+    .description {
+        width: 100%;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 23px 0;
+    }
+}

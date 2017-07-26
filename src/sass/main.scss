@@ -1,0 +1,22 @@
+// RESET CSS //
+
+@import 'reset-css/reset.css';
+
+// HELPERS //
+
+@import 'helpers/_variables.scss';
+@import 'helpers/_utils.scss';
+
+// COMPONENTS //
+
+@import 'components/_carousel.scss';
+@import 'components/_main-content.scss';
+@import 'components/_sub-content.scss';
+@import 'components/_buttons.scss';
+
+// LAYOUT //
+
+@import 'layout/_general.scss';
+@import 'layout/_content.scss';
+@import 'layout/_breakpoint-rules.scss';
+

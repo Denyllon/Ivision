@@ -1,0 +1,36 @@
+@media all and (max-width: $width-break) {
+
+    .carousel {
+        @include flex-row();
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px 21px;
+
+        &:before {
+            @include carousel-arrow('left');          
+        }
+        &:after {
+            @include carousel-arrow('right');
+        }
+        &>.carousel-wrapper {
+            width: 240px;
+            margin: 0;
+        }
+    }
+
+    .content {
+        margin: 0 21px 32px 21px;
+        height: auto;
+
+        &>.container {
+            @include flex-col();
+            width: 100%;
+            height: auto;
+
+            .main-content,
+            .sub-content {
+                width: 100%;
+            }
+        }
+    }
+}
