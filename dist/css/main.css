@@ -194,6 +194,14 @@ table {
   padding: 15px 37.5px;
   margin: 30px 0; }
 
+.btn:hover {
+    background-color: #d3aa6f;
+    color: #fff;
+    transition-duration: 0.5s; }
+
+.btn:focus {
+    outline: none; }
+
 body {
   min-width: 480px;
   font-family: "Lato", sans-serif;
@@ -232,7 +240,7 @@ body {
     -ms-flex-align: center;
         align-items: center;
     margin: 15px 21px; }
-    .carousel:before {
+    .carousel > .previous-button {
       content: "";
       box-sizing: border-box;
       height: 32px;
@@ -240,7 +248,10 @@ body {
       border-style: solid;
       border-width: 16px 21px 16px 0px;
       border-color: transparent #d3aa6f transparent transparent; }
-    .carousel:after {
+      .carousel > .previous-button:hover {
+        border-color: transparent #fff transparent transparent;
+        transition-duration: 0.5s; }
+    .carousel > .next-button {
       content: "";
       box-sizing: border-box;
       height: 32px;
@@ -248,6 +259,9 @@ body {
       border-style: solid;
       border-width: 16px 0px 16px 21px;
       border-color: transparent transparent transparent #d3aa6f; }
+      .carousel > .next-button:hover {
+        border-color: transparent transparent transparent #fff;
+        transition-duration: 0.5s; }
     .carousel > .carousel-wrapper {
       width: 240px;
       margin: 0; }

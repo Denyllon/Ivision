@@ -27,9 +27,17 @@
     @if $side == 'left' {
         border-width: 16px 21px 16px 0px;
         border-color: transparent $gold transparent transparent;
+        &:hover {
+            border-color: transparent #fff transparent transparent;
+            transition-duration: $transitions-time;
+        }
     }
     @if $side == 'right' {
         border-width: 16px 0px 16px 21px;
         border-color: transparent transparent transparent $gold;
+        &:hover {
+            border-color: transparent transparent transparent #fff ;
+            transition-duration: $transitions-time;
+        }
     }     
 }

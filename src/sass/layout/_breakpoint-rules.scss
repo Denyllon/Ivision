@@ -6,10 +6,10 @@
         align-items: center;
         margin: 15px 21px;
 
-        &:before {
+        &>.previous-button {
             @include carousel-arrow('left');          
         }
-        &:after {
+        &>.next-button {
             @include carousel-arrow('right');
         }
         &>.carousel-wrapper {

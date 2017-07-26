@@ -7,4 +7,13 @@
     letter-spacing: 6px;
     padding: 15px 37.5px;
     margin: 30px 0;
+    
+    &:hover {
+        background-color: $gold;
+        color: #fff;
+        transition-duration: $transitions-time;
+    }
+    &:focus {
+        outline: none;
+    }
 }
