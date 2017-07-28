@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "npm run start-server",
-    "start-server": "webpack-dev-server --host 192.168.0.14 --content-base dist/", 
+    "start-server": "webpack-dev-server --host 10.0.0.101 --content-base dist/", 
     "prebuild": "npm run clean",
     "build": "webpack -w",
     "clean": "rimraf dist"

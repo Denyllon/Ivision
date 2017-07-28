@@ -1,6 +1,6 @@
 .sub-content {
     @include flex-col();
-    height: 100%;
+    min-height: 100%;
 
     &>.sub-content-item {
         background-color: #fff;

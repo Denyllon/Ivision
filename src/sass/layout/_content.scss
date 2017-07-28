@@ -7,7 +7,7 @@
     .container {
         @include flex-row();
         width: 800px;
-        height: 570px;
+        height: 100%;
 
         &>* {
             width: 50%;
